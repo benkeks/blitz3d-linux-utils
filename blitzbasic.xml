@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="BlitzBasic" version="0.3" kateversion="2.3" section="Sources" extensions="*.bb;" mimetype="text/x-blitzbasic" author="Based on FreeBasic-Syntax V0.14Chris Neugebauer (chrisjrn@gmail.com),V0.20 Thomas Ludewig (rexxitall@gmx.de); BB-Version 0.3 Benjamin Bisping (ben@mrkeks.net)" license="GPL">
+  <highlighting>
+   
+    <list name="Data Types">
+        <item> % </item>
+        <item> # </item>
+        <item> $ </item>
+    </list>
+
+    <list name="Slopes">
+        <item> Break </item>
+        <item> Exit </item>
+        <item> For </item>
+        <item> Each </item>
+        <item> Next </item>
+        <item> Step </item>
+        <item> To </item>
+        <item> Repeat </item>
+        <item> Until </item>
+        <item> Wend </item>
+        <item> While </item>
+        <item> Return </item>
+     </list>
+
+     <list name="Branches">
+         <item> AND </item>
+         <item> Case </item>
+         <item> Default </item>
+         <item> ElseIf </item>
+         <item> Else </item>
+         <item> Endif </item>
+         <item> Endif </item>
+         <item> EndSelect </item>
+         <item> End </item>
+         <item> EQV </item>
+         <item> If </item>
+         <item> IMP </item>
+         <item> NOT </item>
+         <item> OR </item>
+         <item> Select </item>
+         <item> SHL </item>
+         <item> SHR </item>
+         <item> Then </item>
+         <item> XOR </item>
+     </list>
+
+     <list name="keywords">
+      <item> Const </item>
+      <item> Data </item>
+      <item> Dim </item>
+      <item> End </item>
+      <item> Field </item>
+      <item> Function </item>
+      <item> Global </item>
+      <item> Local </item>
+      <item> New </item>
+      <item> Type </item>
+      <item> Include </item>
+    </list>
+
+    <list name="functions">
+        <item>Float</item><item>Int</item><item>Str</item><item>Abs</item><item>Sgn</item><item>Step </item><item>DebugLog </item><item>FreeTimer</item><item>WaitTimer</item><item>CreateTimer</item><item>SetEnv</item><item>GetEnv </item><item>SystemProperty</item><item>CommandLine</item><item>MilliSecs</item><item>Delay</item><item>ExecFile </item><item>RuntimeError</item><item>AppTitle</item><item>RuntimeStats </item><item>EntityClass</item><item>EntityName</item><item>NameEntity</item><item>FreeEntity</item><item>ShowEntity </item><item>HideEntity</item><item>EntityOrder</item><item>EntityAutoFade</item><item>EntityFX</item><item>EntityBlend </item><item>EntityTexture</item><item>EntityShininess</item><item>EntityAlpha</item><item>EntityColor</item><item>PaintEntity </item><item>FindChild</item><item>GetChild</item><item>CountChildren</item><item>EntityParent</item><item>Animating </item><item>AnimLength</item><item>AnimTime</item><item>AnimSeq</item><item>ExtractAnimSeq</item><item>AddAnimSeq </item><item>SetAnimKey</item><item>Animate</item><item>SetAnimTime</item><item>AlignToVector</item><item>PointEntity </item><item>RotateEntity</item><item>ScaleEntity</item><item>PositionEntity</item><item>TranslateEntity</item><item>TurnEntity </item><item>MoveEntity</item><item>CollisionTriangle</item><item>CollisionSurface</item><item>CollisionEntity</item><item>CollisionTime </item><item>CollisionNZ</item><item>CollisionNY</item><item>CollisionNX</item><item>CollisionZ</item><item>CollisionY </item><item>CollisionX</item><item>CountCollisions</item><item>EntityCollided</item><item>EntityDistance</item><item>EntityBox </item><item>EntityRadius</item><item>GetEntityType</item><item>GetParent</item><item>EntityPickMode</item><item>EntityType </item><item>ResetEntity</item><item>DeltaYaw</item><item>DeltaPitch</item><item>VectorPitch</item><item>VectorYaw </item><item>TFormedZ</item><item>TFormedY</item><item>TFormedX</item><item>TFormNormal</item><item>TFormVector </item><item>TFormPoint</item><item>GetMatElement</item><item>EntityRoll</item><item>EntityYaw</item><item>EntityPitch </item><item>EntityZ</item><item>EntityY</item><item>EntityX</item><item>CopyEntity</item><item>EmitSound </item><item>CreateListener</item><item>ModifyTerrain</item><item>TerrainHeight</item><item>TerrainSize</item><item>TerrainZ </item><item>TerrainY</item><item>TerrainX</item><item>TerrainShading</item><item>TerrainDetail</item><item>LoadTerrain </item><item>CreateTerrain</item><item>CreatePlane</item><item>CreateMirror</item><item>BSPAmbientLight</item><item>BSPLighting </item><item>LoadBSP</item><item>MD2Animating</item><item>MD2AnimLength</item><item>MD2AnimTime</item><item>AnimateMD2 </item><item>LoadMD2</item><item>SpriteViewMode</item><item>HandleSprite</item><item>ScaleSprite</item><item>RotateSprite </item><item>LoadSprite</item><item>CreateSprite</item><item>CreatePivot</item><item>LightConeAngles</item><item>LightRange </item><item>LightColor</item><item>CreateLight</item><item>PickedTriangle</item><item>PickedSurface</item><item>PickedEntity </item><item>PickedTime</item><item>PickedNZ</item><item>PickedNY</item><item>PickedNX</item><item>PickedZ </item><item>PickedY</item><item>PickedX</item><item>CameraPick</item><item>LinePick</item><item>EntityPick </item><item>EntityVisible</item><item>EntityInView</item><item>ProjectedZ</item><item>ProjectedY</item><item>ProjectedX </item><item>CameraProject</item><item>CameraFogMode</item><item>CameraFogRange</item><item>CameraFogColor</item><item>CameraViewport </item><item>CameraProjMode</item><item>CameraClsMode</item><item>CameraClsColor</item><item>CameraRange</item><item>CameraZoom </item><item>CreateCamera</item><item>TriangleVertex</item><item>VertexW</item><item>VertexV</item><item>VertexU </item><item>VertexAlpha</item><item>VertexBlue</item><item>VertexGreen</item><item>VertexRed</item><item>VertexNZ </item><item>VertexNY</item><item>VertexNX</item><item>VertexZ</item><item>VertexY</item><item>VertexX </item><item>CountTriangles</item>
+        <item>CountVertices</item><item>VertexTexCoords</item><item>VertexColor</item><item>VertexNormal </item><item>VertexCoords</item><item>AddTriangle</item><item>AddVertex</item><item>PaintSurface</item><item>ClearSurface </item><item>FindSurface</item><item>GetEntityBrush</item><item>GetSurfaceBrush</item><item>CreateSurface</item><item>GetSurface </item><item>CountSurfaces</item><item>MeshesIntersect</item><item>MeshDepth</item><item>MeshHeight</item><item>MeshWidth </item><item>LightMesh</item><item>UpdateNormals</item><item>AddMesh</item><item>PaintMesh</item><item>FlipMesh </item><item>FitMesh</item><item>PositionMesh</item><item>RotateMesh</item><item>ScaleMesh</item><item>CopyMesh </item><item>CreateCone</item><item>CreateCylinder</item><item>CreateSphere</item><item>CreateCube</item><item>CreateMesh </item><item>LoadAnimSeq</item><item>LoadAnimMesh</item><item>LoadMesh</item><item>BrushFX</item><item>BrushBlend </item><item>GetBrushTexture</item><item>BrushTexture</item><item>BrushShininess</item><item>BrushAlpha</item><item>BrushColor </item><item>FreeBrush</item><item>LoadBrush</item><item>CreateBrush</item><item>TextureFilter</item><item>ClearTextureFilters </item><item>TextureBuffer</item><item>SetCubeMode</item><item>SetCubeFace</item><item>TextureName</item><item>TextureHeight </item><item>TextureWidth</item><item>PositionTexture</item><item>RotateTexture</item><item>ScaleTexture</item><item>TextureCoords </item>
+        <item>TextureBlend</item><item>FreeTexture</item><item>LoadAnimTexture</item><item>LoadTexture</item><item>CreateTexture </item><item>Stats3D</item><item>TrisRendered</item><item>ActiveTextures</item><item>ClearWorld</item><item>RenderWorld </item><item>CaptureWorld</item><item>UpdateWorld</item><item>Collisions</item><item>ClearCollisions</item><item>AmbientLight </item><item>WireFrame</item><item>AntiAlias</item><item>Dither</item><item>WBuffer</item><item>GfxDriverCaps3D </item><item>HWTexUnits</item><item>HWMultiTex</item><item>LoaderMatrix</item><item>NetMsgData</item><item>NetMsgTo </item><item>NetMsgFrom</item><item>NetMsgType</item><item>RecvNetMsg</item><item>SendNetMsg</item><item>NetPlayerLocal </item><item>NetPlayerName</item><item>DeleteNetPlayer</item><item>CreateNetPlayer</item><item>StopNetGame</item><item>JoinNetGame </item><item>HostNetGame</item><item>StartNetGame</item><item>Load3DSound</item><item>ChannelPlaying</item><item>ChannelPan </item><item>ChannelVolume</item><item>ChannelPitch</item><item>ResumeChannel</item><item>PauseChannel</item><item>StopChannel </item><item>PlayCDTrack</item><item>PlayMusic</item><item>PlaySound</item><item>SoundPan</item><item>SoundVolume </item><item>SoundPitch</item><item>LoopSound</item><item>FreeSound</item><item>LoadSound</item><item>DirectInputEnabled </item><item>EnableDirectInput</item><item>FlushJoy</item><item>JoyVDir</item><item>JoyUDir</item><item>JoyZDir </item><item>JoyYDir</item><item>JoyXDir</item><item>JoyHat</item><item>JoyRoll</item><item>JoyYaw </item><item>JoyPitch</item><item>JoyV</item><item>JoyU</item><item>JoyZ</item><item>JoyY </item><item>JoyX</item><item>JoyWait</item><item>WaitJoy</item><item>GetJoy</item><item>JoyHit </item><item>JoyDown</item><item>JoyType</item><item>MoveMouse</item><item>FlushMouse</item><item>MouseZSpeed </item><item>MouseYSpeed</item><item>MouseXSpeed</item><item>MouseZ</item><item>MouseY</item><item>MouseX </item><item>MouseWait</item><item>WaitMouse</item><item>GetMouse</item><item>MouseHit</item><item>MouseDown </item><item>FlushKeys</item><item>WaitKey</item><item>GetKey</item><item>KeyHit</item><item>KeyDown </item><item>HidePointer</item><item>ShowPointer</item><item>Locate</item><item>Input</item><item>Print </item><item>Write</item><item>ImageRectCollide</item><item>ImageRectOverlap</item><item>RectsOverlap</item><item>ImagesCollide </item><item>ImagesOverlap</item><item>TFormFilter</item><item>TFormImage</item><item>RotateImage</item><item>ResizeImage </item><item>ScaleImage</item><item>ImageYHandle</item><item>ImageXHandle</item><item>ImageHeight</item><item>ImageWidth </item><item>AutoMidHandle</item><item>MidHandle</item><item>HandleImage</item><item>MaskImage</item><item>DrawBlockRect </item><item>DrawImageRect</item><item>TileBlock</item><item>TileImage</item><item>DrawBlock</item><item>DrawImage </item><item>ImageBuffer</item><item>GrabImage</item><item>SaveImage</item><item>FreeImage</item><item>LoadAnimImage </item><item>CreateImage</item><item>CopyImage</item><item>LoadImage</item><item>CloseMovie</item><item>MoviePlaying </item><item>MovieHeight</item><item>MovieWidth</item><item>DrawMovie</item><item>OpenMovie</item><item>StringHeight </item><item>StringWidth</item><item>FontHeight</item><item>FontWidth</item><item>FreeFont</item><item>LoadFont </item><item>CopyRect</item><item>Text</item><item>Line</item><item>Oval</item><item>Rect </item><item>Plot</item><item>Cls</item><item>SetFont</item><item>ClsColor</item><item>ColorBlue </item><item>ColorGreen</item><item>ColorRed</item><item>GetColor</item><item>Color</item><item>Viewport </item><item>Origin</item><item>CopyPixelFast</item><item>CopyPixel</item><item>WritePixelFast</item><item>ReadPixelFast </item><item>WritePixel</item><item>ReadPixel</item><item>UnlockBuffer</item><item>LockBuffer</item><item>SaveBuffer </item><item>LoadBuffer</item><item>GraphicsBuffer</item><item>SetBuffer</item><item>GraphicsDepth</item><item>GraphicsHeight </item><item>GraphicsWidth</item><item>Flip</item><item>VWait</item>
+        <item>ScanLine</item><item>BackBuffer </item><item>FrontBuffer</item>
+        <item>GammaBlue</item><item>GammaGreen</item><item>GammaRed</item><item>UpdateGamma </item><item>SetGamma</item><item>EndGraphics</item><item>Graphics3D</item><item>Graphics</item><item>Windowed3D </item><item>GfxMode3D</item><item>GfxMode3DExists</item><item>CountGfxModes3D</item><item>GfxDriver3D</item><item>TotalVidMem </item><item>AvailVidMem</item><item>GfxModeDepth</item><item>GfxModeHeight</item><item>GfxModeWidth</item><item>GfxModeExists </item><item>CountGfxModes</item><item>SetGfxDriver</item><item>GfxDriverName</item><item>CountGfxDrivers</item><item>CallDLL </item><item>WriteBytes</item><item>ReadBytes</item><item>PokeFloat</item><item>PokeInt</item><item>PokeShort </item><item>PokeByte</item><item>PeekFloat</item><item>PeekInt</item><item>PeekShort</item><item>PeekByte </item><item>CopyBank</item><item>ResizeBank</item><item>BankSize</item><item>FreeBank</item><item>CreateBank </item><item>DeleteFile</item><item>CopyFile</item><item>FileType</item><item>FileSize</item><item>DeleteDir </item><item>CreateDir</item><item>ChangeDir</item><item>CurrentDir</item><item>NextFile</item><item>CloseDir </item><item>ReadDir</item><item>SeekFile</item><item>FilePos</item><item>CloseFile</item><item>WriteFile </item><item>ReadFile</item><item>OpenFile</item><item>TCPTimeouts</item><item>TCPStreamPort</item><item>TCPStreamIP </item><item>AcceptTCPStream</item><item>CloseTCPServer</item><item>CreateTCPServer</item><item>CloseTCPStream</item><item>OpenTCPStream </item><item>UDPTimeouts</item><item>UDPMsgPort</item><item>UDPMsgIP</item><item>UDPStreamPort</item><item>UDPStreamIP </item><item>RecvUDPMsg</item><item>SendUDPMsg</item><item>CloseUDPStream</item><item>CreateUDPStream</item><item>HostIP </item><item>CountHostIPs</item><item>DottedIP</item><item>CopyStream</item><item>WriteLine</item><item>WriteString </item><item>WriteFloat</item><item>WriteInt</item><item>WriteShort</item><item>WriteByte</item><item>ReadLine </item><item>ReadString</item><item>ReadFloat</item><item>ReadInt</item><item>ReadShort</item><item>ReadByte </item><item>ReadAvail</item><item>Eof</item><item>CurrentTime</item><item>CurrentDate</item><item>Bin </item><item>Hex</item><item>Len</item><item>Asc</item><item>Chr</item><item>RSet </item><item>LSet</item><item>Trim</item><item>Lower</item><item>Upper</item><item>Mid </item><item>Instr</item><item>Replace</item><item>Right</item><item>Left</item><item>String </item><item>RndSeed</item><item>SeedRnd</item><item>Rand</item><item>Rnd</item><item>Log10 </item><item>Log</item><item>Exp</item><item>Ceil</item><item>Floor</item><item>Sqr </item><item>ATan2</item><item>ATan</item><item>ACos</item><item>ASin</item><item>Tan </item><item>True</item><item>False</item><item>Null </item><item>Pi</item>
+    </list>
+
+
+    <contexts>
+      <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
+
+        <RegExpr attribute="Slopes" context="#stay" String="\b(for)([\s]|$)" insensitive="true" beginRegion="ForRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="\b(next)([\s]|$)" insensitive="true" endRegion="ForRegion"/>        
+        
+        <RegExpr attribute="Branches" context="#stay" String="\b(then)\s+" insensitive="true" endRegion="IfRegion" />
+        
+        <RegExpr attribute="Branches" context="#stay" String="^(\s*)?if" insensitive="true" beginRegion="IfRegion" /> 
+        <RegExpr attribute="Branches" context="#stay" String="\b((end if)|(endif))([\s]|$)" insensitive="true" endRegion="IfRegion"/>   
+        
+        
+        <RegExpr attribute="Branches" context="#stay" String="\b(select)([\s]|$)" insensitive="true" beginRegion="SelectRegion"/>
+        <RegExpr attribute="Branches" context="#stay" String="\b(end select)([\s]|$)" insensitive="true" endRegion="SelectRegion"/>
+        
+        
+        
+        <RegExpr attribute="Data Types" context="#stay" String="\b(type)([\s]|$)" insensitive="true" beginRegion="StructureRegion"/>
+        <RegExpr attribute="Data Types" context="#stay" String="\b(end type)([\s]|$)" insensitive="true" endRegion="StructureRegion"/>
+        
+        <RegExpr attribute="Data Types" context="#stay" String="\b(with)([\s]|$)" insensitive="true" beginRegion="WithRegion"/>
+        <RegExpr attribute="Data Types" context="#stay" String="\b(end with)([\s]|$)" insensitive="true" endRegion="WithRegion"/>
+        
+         
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(while)([\s]|$)" insensitive="true" beginRegion="WhileRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(wend)([\s]|$)" insensitive="true" endRegion="WhileRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(repeat)([\s]|$)" insensitive="true" beginRegion="RepeatRegion"/>
+        <RegExpr attribute="Slopes" context="#stay" String="^(\s*)?(until)([\s]|$)" insensitive="true" endRegion="RepeatRegion"/>
+        
+
+        <RegExpr attribute="Data Types" context="#stay" String="\b(for (input|output|binary|random))([\s]|$)" insensitive="true" />
+
+        <keyword attribute="Keyword" context="#stay" String="keywords"/>
+        <keyword attribute="Data Types" context="#stay" String="Data Types"/>
+
+        <keyword attribute="Functions" context="#stay" String="functions"/>
+
+        <RegExpr attribute="Constant" context="#stay" String="\#+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*"/>
+        <Float attribute="Number" context="#stay"/>
+
+        <DetectChar attribute="String" context="String" char="&quot;" />
+        
+        <RegExpr attribute="Region Marker" context="#stay" String="^\s*\s*FUNCTION.*$" beginRegion="marker"/>
+        <RegExpr attribute="Region Marker" context="#stay" String="^\s*\s*END\ FUNCTION.*$" endRegion="marker"/>
+        
+        <DetectChar attribute="Comment" context="Comment1" char=";"/>
+        <RegExpr attribute="Branches" context="#stay" String="end\ if" insensitive="true" />
+
+        <RegExpr attribute="Keyword" context="#stay" String="for\ input" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ output" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ binary" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ append" insensitive="true" />
+        <RegExpr attribute="Keyword" context="#stay" String="for\ random" insensitive="true" />
+
+        <RegExpr attribute="Comment"  context="#stay" String="^(\s?)*[0-9]*\s+" insensitive="true" />
+
+        <RegExpr attribute="Number"  context="#stay" String="\b\d+\b" insensitive="true" />
+
+
+        <AnyChar attribute="Other" context="#stay" String=";^()}{:,/[]+-*\=&lt;&gt;" />
+        <keyword attribute="Slopes" context="#stay" String="Slopes"/>
+        <keyword attribute="Branches" context="#stay" String="Branches"/>
+      </context>
+
+
+      <context attribute="String" lineEndContext="#pop" name="String">
+        <DetectChar attribute="String" context="#pop" char="&quot;"/>
+      </context>
+
+      <context attribute="Comment" lineEndContext="#pop" name="Comment1">
+        <keyword attribute="Number" context="#stay" String="attention" />
+      </context>
+
+    </contexts>
+
+    <itemDatas>
+      <itemData name="Branches"         defStyleNum="dsChar" />
+      <itemData name="Comment"          defStyleNum="dsComment"/>
+      <itemData name="Constant"         defStyleNum="dsConstant"/>
+      <itemData name="Data Types"       defStyleNum="dsDataType"/>
+      <itemData name="Functions"        defStyleNum="dsFunction"/>
+      <itemData name="Keyword"          defStyleNum="dsKeyword"/>
+      <itemData name="Normal Text"      defStyleNum="dsNormal"/>
+      <itemData name="Number"           defStyleNum="dsDecVal"/>
+      <itemData name="Other"            defStyleNum="dsOthers" />
+      <itemData name="Region Marker "   defStyleNum="dsRegionMarker"/>
+      <itemData name="Slopes"           defStyleNum="dsOthers" />
+      <itemData name="String"           defStyleNum="dsString"/>
+
+
+    </itemDatas>
+  </highlighting>
+  <general>
+    <keywords casesensitive="0" />
+    <comments>
+      <comment name="singleLine" start=";" />
+    </comments>
+  </general>
+</language>
+<!-- // kate: space-indent on; indent-width 4; replace-tabs on; -->
