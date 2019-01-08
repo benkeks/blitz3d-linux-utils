@@ -10,8 +10,8 @@ This is a small collection of stuff for using Blitz3d with Wine on Linux.
 ## Make Blitz3d Compiler usable from terminal
 
  * Install `wine`.
- * Put your `Blitz3d` directory into `~/.wine/drive_c/Program Files/` (or create a link).
-   * If you have not got a Blitz3d installation: You can download the executables for free from <http://blitzbasic.com>.
+ * Put your `Blitz3D` directory into `~/.wine/drive_c/Program Files/` (or create a link).
+   * If you have not got a Blitz3d installation: You can download the executables for free from <https://blitzresearch.itch.io/blitz3d>.
  * Set `blitzcc.sh` to be executable.
  
 You can now use `blitzcc.sh` to access the Blitz3d-Compiler from the linux terminal.
@@ -30,6 +30,6 @@ You can now use `blitzcc.sh` to access the Blitz3d-Compiler from the linux termi
 
 In order to run `blitzcc` like a command, you can add an alias to your `.bashrc`:
  
- * Copy `blitzcc.sh` into the same directory `~/.wine/drive_c/Program Files/Blitz3d/`.
- * Extend `~/.bashrc` by `alias blitzcc='~/.wine/drive_c/Program Files/Blitz3d/launchBlitz.sh'`.
+ * Copy `blitzcc.sh` into the same directory `~/.wine/drive_c/Program Files/Blitz3D/`.
+ * Extend `~/.bashrc` by `alias blitzcc='~/.wine/drive_c/Program\ Files/Blitz3D/blitzcc.sh'`.
  * Open new terminal window.
